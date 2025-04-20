@@ -1,5 +1,5 @@
 import streamlit as st
-import speech_recognition as sr
+import speech_recognition as sr # type: ignore
 
 def recognize_speech():
     recognizer = sr.Recognizer()

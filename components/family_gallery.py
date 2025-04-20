@@ -14,7 +14,7 @@ def show_family_gallery(family_data):
         with cols[i % 3]:  # Distribute images across columns
             # Show uploaded image
             image = Image.open(BytesIO(member['image']))
-            st.image(image, caption=member['name'], use_container_width=True)  # ✅ Updated here
+            st.image(image, caption=member['name'], use_column_width=True)
             time.sleep(random.uniform(0.5, 1.5))  # Adding random delay for animation effect
 
             # Pronounce name (can be enhanced by adding audio functionality)

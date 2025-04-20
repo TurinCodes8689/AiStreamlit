@@ -1,16 +1,16 @@
 import streamlit as st
-import fitz  # PyMuPDF
-import docx
+import fitz  # type: ignore # PyMuPDF
+import docx # type: ignore
 import os
 import json
-import pyttsx3
-import speech_recognition as sr
+import pyttsx3 # type: ignore
+import speech_recognition as sr # type: ignore
 from io import BytesIO
-from datetime import date
+from datetime import date, datetime
 from langchain_groq import ChatGroq
 import requests
-from fpdf import FPDF
-from docx import Document
+from fpdf import FPDF # type: ignore
+from docx import Document # type: ignore
 from typing import List, Dict, Any
 import base64  # Import base64 for image encoding
 
